@@ -1,16 +1,10 @@
-function Navbar() {
+const Navbar = ({ name, type }) => {
   return (
-    <div className="min-h-screen flex flex-col ">
-      <nav></nav>
-      <main className="flex-grow flex flex-col h-full">
-        <div className="h-full flex flex-col flex-grow items-center justify-center">
-          <h1>Hello, Next.js</h1>
-          <p>Goodl luck</p>
-        </div>
-      </main>
-      <footer></footer>
+    <div className="h-full flex flex-col flex-grow items-center justify-center">
+      <h1>{name}</h1>
+      <h2>{type}</h2>
     </div>
   );
-}
+};
 
 export default Navbar;
